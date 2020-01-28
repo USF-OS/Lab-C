@@ -24,6 +24,13 @@ To compile all the programs, `cd` into the `c-programs` directory and run `make`
 
 For our second exercise, we'll be implementing a function to read files line by line, similar to `fgets(3)` or `getline(3)`. However, you'll be using the much lower-level `read(2)` function. You will find the starter code and test cases in the `lineread` directory; run `make test` to run the tests.
 
+`read()` takes three arguments:
+* **fd** -- the *file descriptor* to read from. To get a file descriptor, use `open()`. For this assignment, `O_RDONLY` is sufficient for the *flags* parameter to `open()`.
+* **buf** -- where data being read will be copied.
+* **count** -- number of bytes to read. Since `read()` doesn't really recognize where lines start or end, you will tell it how many bytes to read at a time instead.
+
+You'll build on this to implement your `lineread()` function.
+
 
 ## Grading
 
