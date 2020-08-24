@@ -1,4 +1,4 @@
-# Lab 2: Remembering how to C
+# Remembering how to C
 
 In 326, C sells C shells down by the C shore. Can't you C it?
 
